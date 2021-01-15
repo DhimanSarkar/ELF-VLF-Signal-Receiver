@@ -1,5 +1,5 @@
 .tmp
 .cache
 
-*-cache.lib
-*.sch-bak
+*-cache*
+*.*-bak
