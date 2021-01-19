@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Amplifier_Operational:TL072 U1
-U 1 1 5FFBD6D1
-P 4350 3300
-F 0 "U1" H 4350 3667 50  0000 C CNN
-F 1 "TL072" H 4350 3576 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 4350 3300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4350 3300 50  0001 C CNN
-	1    4350 3300
-	1    0    0    1   
-$EndComp
-$Comp
 L Device:R_Small R1
 U 1 1 5FFC0275
 P 3850 3200
@@ -218,17 +207,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 3000 4750 3300
 $Comp
-L Amplifier_Operational:TL072 U1
-U 3 1 5FFC3E73
-P 3100 3600
-F 0 "U1" H 3058 3646 50  0000 L CNN
-F 1 "TL072" H 3058 3555 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 3100 3600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3100 3600 50  0001 C CNN
-	3    3100 3600
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:+VDC #PWR0106
 U 1 1 5FFE74D5
 P 3200 3300
@@ -322,4 +300,26 @@ Wire Wire Line
 Connection ~ 2000 3950
 Wire Wire Line
 	2250 3350 2000 3350
+$Comp
+L Amplifier_Operational:TL072 U1
+U 3 1 5FFC3E73
+P 3100 3600
+F 0 "U1" H 3058 3646 50  0000 L CNN
+F 1 "TL072" H 3058 3555 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 3100 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3100 3600 50  0001 C CNN
+	3    3100 3600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U1
+U 1 1 5FFBD6D1
+P 4350 3300
+F 0 "U1" H 4350 3667 50  0000 C CNN
+F 1 "TL072" H 4350 3576 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 4350 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4350 3300 50  0001 C CNN
+	1    4350 3300
+	1    0    0    1   
+$EndComp
 $EndSCHEMATC
