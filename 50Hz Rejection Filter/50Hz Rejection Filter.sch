@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "50Hz Rejection Filter"
 Date "2021-01-20"
-Rev "1.1"
+Rev "1.2"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -79,20 +79,16 @@ Wire Wire Line
 Wire Wire Line
 	4300 2400 4450 2400
 Wire Wire Line
-	4450 2400 4450 2850
-Wire Wire Line
 	4450 3400 4350 3400
 Wire Wire Line
 	3350 2400 3250 2400
 Wire Wire Line
-	3250 2400 3250 2850
-Wire Wire Line
 	3250 3400 3400 3400
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR02
 U 1 1 6007ED86
 P 4250 2900
-F 0 "#PWR?" H 4250 2650 50  0001 C CNN
+F 0 "#PWR02" H 4250 2650 50  0001 C CNN
 F 1 "GNDREF" H 4255 2727 50  0000 C CNN
 F 2 "" H 4250 2900 50  0001 C CNN
 F 3 "" H 4250 2900 50  0001 C CNN
@@ -116,10 +112,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 3300 3850 3400
 Wire Wire Line
-	4450 2850 4800 2850
-Connection ~ 4450 2850
-Wire Wire Line
-	4450 2850 4450 3400
+	4450 3000 4800 3000
 Wire Wire Line
 	3250 2850 3000 2850
 Connection ~ 3250 2850
@@ -127,45 +120,8 @@ Wire Wire Line
 	3250 2850 3250 3400
 Text GLabel 3000 2850 0    50   Input ~ 0
 Signal_IN
-Text GLabel 4800 2850 2    50   Input ~ 0
-Signal_OUT
 Wire Wire Line
 	4250 2850 3850 2850
-$Comp
-L pspice:0 #GND?
-U 1 1 600883AF
-P 1850 3000
-F 0 "#GND?" H 1850 2900 50  0001 C CNN
-F 1 "0" H 1850 3089 50  0000 C CNN
-F 2 "" H 1850 3000 50  0001 C CNN
-F 3 "~" H 1850 3000 50  0001 C CNN
-	1    1850 3000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR?
-U 1 1 60088A5A
-P 1400 3050
-F 0 "#PWR?" H 1400 2800 50  0001 C CNN
-F 1 "GNDREF" H 1405 2877 50  0000 C CNN
-F 2 "" H 1400 3050 50  0001 C CNN
-F 3 "" H 1400 3050 50  0001 C CNN
-	1    1400 3050
-	1    0    0    -1  
-$EndComp
-Text GLabel 1800 2100 1    50   Input ~ 0
-Signal_IN
-Wire Wire Line
-	1800 2900 1850 2900
-Wire Wire Line
-	1850 2900 1850 3000
-Wire Wire Line
-	1400 3050 1750 3050
-Wire Wire Line
-	1750 3050 1750 2900
-Wire Wire Line
-	1750 2900 1800 2900
-Connection ~ 1800 2900
 $Comp
 L Device:C C3
 U 1 1 60073406
@@ -177,26 +133,142 @@ F 3 "~" H 3850 2600 50  0001 C CNN
 	1    3850 2600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5450 2900 5400 2900
+Wire Wire Line
+	5450 2600 5450 2900
+Wire Wire Line
+	4700 2600 5450 2600
+Wire Wire Line
+	4700 2800 4700 2600
+Wire Wire Line
+	4800 2800 4700 2800
 $Comp
-L pspice:VSOURCE V1
-U 1 1 6009AACD
-P 1500 2400
-F 0 "V1" H 1728 2446 50  0000 L CNN
-F 1 "AC 1" H 1728 2355 50  0000 L CNN
-F 2 "" H 1500 2400 50  0001 C CNN
-F 3 "~" H 1500 2400 50  0001 C CNN
-F 4 "V" H 1500 2400 50  0001 C CNN "Spice_Primitive"
-F 5 "dc 0 ac 1 0" H 1500 2400 50  0001 C CNN "Spice_Model"
-F 6 "Y" H 1500 2400 50  0001 C CNN "Spice_Netlist_Enabled"
-	1    1500 2400
+L Amplifier_Operational:TL072 U1
+U 1 1 6010D5DA
+P 5100 2900
+F 0 "U1" H 5100 2533 50  0000 C CNN
+F 1 "TL072" H 5100 2624 50  0000 C CNN
+F 2 "" H 5100 2900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5100 2900 50  0001 C CNN
+F 4 "X" H 5100 2900 50  0001 C CNN "Spice_Primitive"
+F 5 "TL072" H 5100 2900 50  0001 C CNN "Spice_Model"
+F 6 "N" H 5100 2900 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "" H 5100 2900 50  0001 C CNN "Spice_Lib_File"
+	1    5100 2900
+	1    0    0    1   
+$EndComp
+Text GLabel 6050 2900 2    50   Input ~ 0
+Signal_OUT
+Wire Wire Line
+	5650 2900 5450 2900
+Connection ~ 5450 2900
+$Comp
+L Device:R R6
+U 1 1 6012B9D3
+P 4900 1950
+F 0 "R6" H 4970 1996 50  0000 L CNN
+F 1 "100k" H 4970 1905 50  0000 L CNN
+F 2 "" V 4830 1950 50  0001 C CNN
+F 3 "~" H 4900 1950 50  0001 C CNN
+	1    4900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 6012CBFF
+P 4900 1500
+F 0 "R5" H 4970 1546 50  0000 L CNN
+F 1 "100k" H 4970 1455 50  0000 L CNN
+F 2 "" V 4830 1500 50  0001 C CNN
+F 3 "~" H 4900 1500 50  0001 C CNN
+	1    4900 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 2700 1800 2900
+	4900 1650 4900 1700
+$Comp
+L power:GNDREF #PWR?
+U 1 1 6013802F
+P 4650 1750
+F 0 "#PWR?" H 4650 1500 50  0001 C CNN
+F 1 "GNDREF" H 4655 1577 50  0000 C CNN
+F 2 "" H 4650 1750 50  0001 C CNN
+F 3 "" H 4650 1750 50  0001 C CNN
+	1    4650 1750
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1800 2100 1500 2100
+	4650 1750 4650 1700
 Wire Wire Line
-	1800 2700 1500 2700
-Text Notes 2350 6150 0    50   ~ 0
-.title 50Hz Rejection Filter\n\nR3 0 Net-_C1-Pad2_ 16.5k\nC2 Net-_C1-Pad2_ Signal_OUT 0.1u\nC1 Signal_IN Net-_C1-Pad2_ 0.1u\nR1 Signal_IN Net-_C3-Pad1_ 33k\nR2 Net-_C3-Pad1_ Signal_OUT 33k\nC3 Net-_C3-Pad1_ 0 0.2u\nV1 Signal_IN 0 dc 0 ac 1 0\n\n.save V(Signal_OUT)\n.print ac vdb(Signal_OUT,0)\n.ac dec 10000 1 100\n.end
+	4650 1700 4900 1700
+Connection ~ 4900 1700
+Wire Wire Line
+	4900 1700 4900 1800
+$Comp
+L Amplifier_Operational:TL072 U1C
+U 3 1 6013CE54
+P 5450 1750
+F 0 "U1C" H 5408 1796 50  0000 L CNN
+F 1 "TL072" H 5408 1705 50  0000 L CNN
+F 2 "" H 5450 1750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5450 1750 50  0001 C CNN
+F 4 "X" H 5450 1750 50  0001 C CNN "Spice_Primitive"
+F 5 "TL072" H 5450 1750 50  0001 C CNN "Spice_Model"
+F 6 "N" H 5450 1750 50  0001 C CNN "Spice_Netlist_Enabled"
+	3    5450 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1450 5350 1350
+Wire Wire Line
+	5350 2050 5350 2100
+Connection ~ 4900 2100
+$Comp
+L power:GND #PWR?
+U 1 1 601328A5
+P 4900 2100
+F 0 "#PWR?" H 4900 1850 50  0001 C CNN
+F 1 "GND" H 4905 1927 50  0000 C CNN
+F 2 "" H 4900 2100 50  0001 C CNN
+F 3 "" H 4900 2100 50  0001 C CNN
+	1    4900 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1350 5350 1350
+Connection ~ 4900 1350
+$Comp
+L power:VCC #PWR?
+U 1 1 6012D4F2
+P 4900 1350
+F 0 "#PWR?" H 4900 1200 50  0001 C CNN
+F 1 "VCC" H 4915 1523 50  0000 C CNN
+F 2 "" H 4900 1350 50  0001 C CNN
+F 3 "" H 4900 1350 50  0001 C CNN
+	1    4900 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2400 4450 3000
+Wire Wire Line
+	4900 2100 5350 2100
+Connection ~ 4450 3000
+Wire Wire Line
+	4450 3000 4450 3400
+Wire Wire Line
+	5950 2900 6050 2900
+$Comp
+L Device:CP C9
+U 1 1 600FD41C
+P 5800 2900
+F 0 "C9" H 5915 2946 50  0000 L CNN
+F 1 "220u" H 5915 2855 50  0000 L CNN
+F 2 "" H 5838 2750 50  0001 C CNN
+F 3 "~" H 5800 2900 50  0001 C CNN
+	1    5800 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 2400 3250 2850
 $EndSCHEMATC
