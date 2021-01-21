@@ -2,9 +2,9 @@
 This analog filter has been desinged to eliminate the unwanted 50Hz Signal due to Power Transmission Systems.
 The main goal is to use a Band Elimination/Rejection Filter (BEF/BRF) with high Q value.
 
-# v1.1 - 48Hz Cut-Off Twin-T Notch Filter
+## v1.1 - 48Hz Cut-Off Twin-T Notch Filter
 The v1.1 Revision of the Filter design has a Notch Frequency of 48Hz. Which gives around -28dB Attenuation at 50Hz signal.
-- # List of Components
+- ### List of Components
     1. Capacitor
         1. 0.1μF \- 4 pcs.
         2. 220μF \- 1 pcs.
@@ -13,15 +13,15 @@ The v1.1 Revision of the Filter design has a Notch Frequency of 48Hz. Which give
         2. 100kΩ \- 2 pcs.
     3. OP-AMP
         1. TL072 \- 1pcs.
-            - TL072 Datasheet](https://www.ti.com/lit/ds/slos080p/slos080p.pdf)
-- # Schematics
+            - [TL072 Datasheet](https://www.ti.com/lit/ds/slos080p/slos080p.pdf)
+- ### Schematics
 <img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/v1.1 Schematics.png">
 
-- # Build Images
-Front Side
-<img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/F.jpg">
-Back Side
-<img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/B.jpg">
+- ### Build Images
+<div style="display: flex; flex-direction:row">
+    <div style="width:100%; padding:10px"><img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/F.jpg"></div>
+    <div style="width:100%; padding:10px"><img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/B.jpg"></div>
+</div>
 
 ## Licences
 [CERN-OHL-S](https://ohwr.org/cern_ohl_s_v2.txt)
