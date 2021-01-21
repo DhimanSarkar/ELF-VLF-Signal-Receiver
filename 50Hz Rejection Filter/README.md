@@ -13,9 +13,10 @@ The v1.1 Revision of the Filter design has a Notch Frequency of 48Hz. Which give
         2. 100kΩ \- 2 pcs.
     3. OP-AMP
         1. TL072 \- 1pcs.
-            - (TL072 Datasheet)[https://www.ti.com/lit/ds/slos080p/slos080p.pdf]
+            - TL072 Datasheet](https://www.ti.com/lit/ds/slos080p/slos080p.pdf)
 - # Schematics
 <img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/v1.1 Schematics.png">
+
 - # Build Images
 Front Side
 <img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/F.jpg">

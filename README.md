@@ -10,4 +10,4 @@ A hobby project to detect Extremely Low Frequency ([ELF](https://en.wikipedia.or
 [CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
 
 
-See 'LICENCE', 'LICENCE.CERN-OHL-S.txt', 'LICENCE.GNU-AGPLv3.txt', 'LICENCE.CC-BY-SA-4.0.txt' for more details.
+See '[LICENCE](/LICENCE)', '[LICENCE.CERN-OHL-S.txt](/LICENCE.CERN-OHL-S.txt)', '[LICENCE.GNU-AGPLv3.txt](/LICENCE.GNU-AGPLv3.txt)', '[LICENCE.CC-BY-SA-4.0.txt](/LICENCE.CC-BY-SA-4.0.txt)' for more details.
