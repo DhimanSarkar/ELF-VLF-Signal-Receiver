@@ -19,8 +19,8 @@ The v1.1 Revision of the Filter design has a Notch Frequency of 48Hz. Which give
 
 - ### Build Images
 <div style="display: flex; flex-direction:row">
-    <div style="width:100%; padding:10px"><img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/F.jpg"></div>
-    <div style="width:100%; padding:10px"><img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/B.jpg"></div>
+    <div style="width:100%; padding:10px"><img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/F.jpg" width="100%"></div>
+    <div style="width:100%; padding:10px"><img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/B.jpg" width="100%"></div>
 </div>
 
 ## Licences
