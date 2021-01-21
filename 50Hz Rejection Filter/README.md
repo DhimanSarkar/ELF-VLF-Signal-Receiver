@@ -6,18 +6,26 @@ The main goal is to use a Band Elimination/Rejection Filter (BEF/BRF) with high 
 The v1.1 Revision of the Filter design has a Notch Frequency of 48Hz. Which gives around -28dB Attenuation at 50Hz signal.
 - # List of Components
     1. Capacitor
-        i. 0.1μF \- 4 pcs.
-        ii. 220μF \- 1 pcs.
+        1. 0.1μF \- 4 pcs.
+        2. 220μF \- 1 pcs.
     2. Resistor
-        i. 33kΩ \- 4 pcs.
-        ii. 100kΩ \- 2 pcs.
+        1. 33kΩ \- 4 pcs.
+        2. 100kΩ \- 2 pcs.
     3. OP-AMP
-        i. TL072 - 1pcs.
+        1. TL072 \- 1pcs.
             - (TL072 Datasheet)[https://www.ti.com/lit/ds/slos080p/slos080p.pdf]
 - # Schematics
 <img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/v1.1 Schematics.png">
 - # Build Images
 Front Side
-<img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/A.jpg">
+<img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/F.jpg">
 Back Side
-<img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/B.jpg">
+<img src="https://raw.githubusercontent.com/DhimanSarkar/ELF-Signal-Receiver/master/50Hz Rejection Filter/v1.1 build/B.jpg">
+
+## Licences
+[CERN-OHL-S](https://ohwr.org/cern_ohl_s_v2.txt)
+[GNU AGPLv3](https://www.gnu.org/licenses/gpl-3.0.txt)
+[CC-BY-SA-4.0](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
+
+
+See '[LICENCE](/LICENCE)', '[LICENCE.CERN-OHL-S.txt](/LICENCE.CERN-OHL-S.txt)', '[LICENCE.GNU-AGPLv3.txt](/LICENCE.GNU-AGPLv3.txt)', '[LICENCE.CC-BY-SA-4.0.txt](/LICENCE.CC-BY-SA-4.0.txt)' for more details.
