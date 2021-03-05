@@ -1,0 +1,193 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R3
+U 1 1 60073F78
+P 4250 3950
+F 0 "R3" H 4320 3996 50  0000 L CNN
+F 1 "16.5k" H 4320 3905 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4180 3950 50  0001 C CNN
+F 3 "~" H 4250 3950 50  0001 C CNN
+	1    4250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 600739CD
+P 4600 4200
+F 0 "C2" V 4852 4200 50  0000 C CNN
+F 1 "0.1u" V 4761 4200 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L9.0mm_W3.9mm_P7.50mm_MKT" H 4638 4050 50  0001 C CNN
+F 3 "~" H 4600 4200 50  0001 C CNN
+	1    4600 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60073B8C
+P 3950 4200
+F 0 "C1" V 4202 4200 50  0000 C CNN
+F 1 "0.1u" V 4111 4200 50  0000 C CNN
+F 2 "Capacitor_THT:C_Rect_L9.0mm_W3.9mm_P7.50mm_MKT" H 3988 4050 50  0001 C CNN
+F 3 "~" H 3950 4200 50  0001 C CNN
+	1    3950 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 60075859
+P 3900 3200
+F 0 "R1" V 4107 3200 50  0000 C CNN
+F 1 "33k" V 4016 3200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 3830 3200 50  0001 C CNN
+F 3 "~" H 3900 3200 50  0001 C CNN
+F 4 "R" H 3900 3200 50  0001 C CNN "Spice_Primitive"
+F 5 "33k" H 3900 3200 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3900 3200 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3900 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60075A6B
+P 4550 3200
+F 0 "R2" V 4757 3200 50  0000 C CNN
+F 1 "33k" V 4666 3200 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4480 3200 50  0001 C CNN
+F 3 "~" H 4550 3200 50  0001 C CNN
+	1    4550 3200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4050 3200 4250 3200
+Connection ~ 4250 3200
+Wire Wire Line
+	4250 3200 4400 3200
+Wire Wire Line
+	4700 3200 4850 3200
+Wire Wire Line
+	4850 4200 4750 4200
+Wire Wire Line
+	3750 3200 3650 3200
+Wire Wire Line
+	3650 4200 3800 4200
+$Comp
+L power:GNDREF #PWR02
+U 1 1 6007ED86
+P 4400 3650
+F 0 "#PWR02" H 4400 3400 50  0001 C CNN
+F 1 "GNDREF" H 4405 3477 50  0000 C CNN
+F 2 "" H 4400 3650 50  0001 C CNN
+F 3 "" H 4400 3650 50  0001 C CNN
+	1    4400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3250 4250 3200
+Wire Wire Line
+	4100 4200 4250 4200
+Wire Wire Line
+	4250 3550 4250 3650
+Connection ~ 4250 3650
+Wire Wire Line
+	4250 3650 4250 3800
+Connection ~ 4250 4200
+Wire Wire Line
+	4250 4200 4450 4200
+Wire Wire Line
+	4250 4100 4250 4200
+Wire Wire Line
+	3650 3650 3400 3650
+Connection ~ 3650 3650
+Wire Wire Line
+	3650 3650 3650 4200
+$Comp
+L Device:C C3
+U 1 1 60073406
+P 4250 3400
+F 0 "C3" H 4365 3446 50  0000 L CNN
+F 1 "0.2u" H 4365 3355 50  0000 L CNN
+F 2 "Capacitor_THT:C_Rect_L9.0mm_W3.9mm_P7.50mm_MKT" H 4288 3250 50  0001 C CNN
+F 3 "~" H 4250 3400 50  0001 C CNN
+	1    4250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3200 3650 3650
+$Comp
+L Amplifier_Operational:TL071 U501
+U 1 1 6042B2BE
+P 5650 3725
+F 0 "U501" H 5994 3771 50  0000 L CNN
+F 1 "TL071" H 5994 3680 50  0000 L CNN
+F 2 "" H 5700 3775 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5800 3875 50  0001 C CNN
+	1    5650 3725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3200 4850 3625
+Wire Wire Line
+	5350 3825 5350 4325
+Wire Wire Line
+	5350 4325 5950 4325
+Wire Wire Line
+	5950 4325 5950 3725
+Wire Wire Line
+	5350 3625 4850 3625
+Connection ~ 4850 3625
+Wire Wire Line
+	4850 3625 4850 4200
+$Comp
+L power:+2V5 #PWR?
+U 1 1 6043203A
+P 5550 3400
+AR Path="/6043203A" Ref="#PWR?"  Part="1" 
+AR Path="/6041F67C/6043203A" Ref="#PWR0502"  Part="1" 
+F 0 "#PWR0502" H 5550 3250 50  0001 C CNN
+F 1 "+2V5" H 5565 3573 50  0000 C CNN
+F 2 "" H 5550 3400 50  0001 C CNN
+F 3 "" H 5550 3400 50  0001 C CNN
+	1    5550 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-2V5 #PWR?
+U 1 1 60432046
+P 5550 4075
+AR Path="/60432046" Ref="#PWR?"  Part="1" 
+AR Path="/6041F67C/60432046" Ref="#PWR0503"  Part="1" 
+F 0 "#PWR0503" H 5550 4175 50  0001 C CNN
+F 1 "-2V5" H 5565 4248 50  0000 C CNN
+F 2 "" H 5550 4075 50  0001 C CNN
+F 3 "" H 5550 4075 50  0001 C CNN
+	1    5550 4075
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5550 3425 5550 3400
+Wire Wire Line
+	5550 4025 5550 4075
+Wire Wire Line
+	4400 3650 4250 3650
+Text HLabel 6450 3725 2    50   Output ~ 0
+50HzFilter_Out
+Text HLabel 3400 3650 0    50   Input ~ 0
+50HzFilter_In
+Wire Wire Line
+	5950 3725 6450 3725
+Connection ~ 5950 3725
+$EndSCHEMATC
