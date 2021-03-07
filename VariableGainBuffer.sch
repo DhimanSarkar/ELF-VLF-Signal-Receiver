@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 6
-Title ""
-Date ""
-Rev ""
+Title "Variable Gain Buffer"
+Date "2021-03-08"
+Rev "v2.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -46,10 +46,6 @@ F 3 "~" H 5200 4000 50  0001 C CNN
 	1    5200 4000
 	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	4975 3550 4975 4000
-Wire Wire Line
-	4975 4000 5050 4000
 Wire Wire Line
 	5350 4000 5550 4000
 Wire Wire Line
@@ -133,10 +129,10 @@ $EndComp
 Wire Wire Line
 	5900 3550 5900 3450
 $Comp
-L power:GNDREF #PWR03
+L power:GNDREF #PWR0604
 U 1 1 60429C4F
 P 5900 3850
-F 0 "#PWR03" H 5900 3600 50  0001 C CNN
+F 0 "#PWR0604" H 5900 3600 50  0001 C CNN
 F 1 "GNDREF" H 5905 3677 50  0000 C CNN
 F 2 "" H 5900 3850 50  0001 C CNN
 F 3 "" H 5900 3850 50  0001 C CNN
@@ -149,4 +145,9 @@ Connection ~ 5900 3450
 Wire Wire Line
 	5600 3450 5550 3450
 Connection ~ 5550 3450
+Wire Wire Line
+	4950 3550 4950 4000
+Wire Wire Line
+	4950 4000 5050 4000
+Connection ~ 4950 3550
 $EndSCHEMATC

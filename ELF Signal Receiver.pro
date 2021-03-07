@@ -1,4 +1,4 @@
-update=03/05/21 15:49:42
+update=03/08/21 00:35:23
 version=1
 last_client=kicad
 [general]
@@ -33,11 +33,11 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=A4_OSHW.kicad_wks
 PlotDirectoryName=./
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=Pcbnew
-SpiceAjustPassiveValues=0
+NetFmtName=Spice
+SpiceAjustPassiveValues=1
 LabSize=50
 ERC_TestSimilarLabels=1

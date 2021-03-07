@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 6
-Title ""
-Date ""
-Rev ""
+Title "ELF-VLF Antenna Front-End"
+Date "2021-03-08"
+Rev "v2.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -19,8 +19,8 @@ U 1 1 6045E773
 P 4375 3450
 AR Path="/6045E773" Ref="AE?"  Part="1" 
 AR Path="/6043822C/6045E773" Ref="AE?"  Part="1" 
-AR Path="/6045E140/6045E773" Ref="AE401"  Part="1" 
-F 0 "AE401" H 4575 3575 50  0000 R CNN
+AR Path="/6045E140/6045E773" Ref="AE301"  Part="1" 
+F 0 "AE301" H 4575 3575 50  0000 R CNN
 F 1 "Antenna_Shield" H 4975 3450 50  0000 R CNN
 F 2 "" H 4375 3550 50  0001 C CNN
 F 3 "~" H 4375 3550 50  0001 C CNN
