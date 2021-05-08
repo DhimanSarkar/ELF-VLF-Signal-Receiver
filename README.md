@@ -1,5 +1,5 @@
 # ELF Signal Receiver
-A hobby project to detect Extremely Low Frequency ([ELF](https://en.wikipedia.org/wiki/Extremely_low_frequency)) Signals
+A project to detect Extremely Low Frequency ([ELF](https://en.wikipedia.org/wiki/Extremely_low_frequency)) Signals
 
 ## Dependencies
 - [KiCAD](https://kicad.org)
